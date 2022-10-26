@@ -9,5 +9,6 @@ let quotes = [
 
 const mainTitleEl = document.querySelector('#main-title')
 // console.log("iiiii")
-mainTitleEl.innerHTML = "<h1>This is Dom Torretto's World!</h1>";
+mainTitleEl.querySelector('main-title').innerHTML = "<h1>This is Dom Torretto's World!</h1>";
 
+body.backgroundColor = '#3CB371'
