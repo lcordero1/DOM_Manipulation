@@ -26,3 +26,5 @@ faveThingsEl.classList.remove(faveThingsEl.lastElementChild)
 
 // Part 5
 // Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
+const pastRacesEl = document.querySelector('#past-races')
+pastRacesEl[3].remove
