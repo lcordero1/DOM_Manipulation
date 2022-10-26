@@ -11,7 +11,8 @@ let quotes = [
 const h1TextEl = document.getElementById('main-title')
 // // console.log("iiiii")
 h1TextEl.textContent = ("This is Dom Torretto's World!");
-h1TextEl.append(h1TextEl)
+// h1TextEl.append(h1TextEl)
+console.log(h1TextEl)
 
 //Part 2
 /*Select the body and change the background-color to a new color of your choice.*/
