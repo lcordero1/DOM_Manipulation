@@ -6,3 +6,8 @@ let quotes = [
   `I don't have friends. I have family.`,
   `It don't matter if you win by an inch or a mile. Winning's winning.`
 ];
+
+const mainTitleEl = document.querySelector('#main-title')
+// console.log("iiiii")
+mainTitleEl.innerHTML = "<h1>This is Dom Torretto's World!</h1>";
+
