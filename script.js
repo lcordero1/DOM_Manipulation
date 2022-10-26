@@ -6,9 +6,18 @@ let quotes = [
   `I don't have friends. I have family.`,
   `It don't matter if you win by an inch or a mile. Winning's winning.`
 ];
+/*Part 1: Write a JavaScript statement that selects the #main-title ID element.Change the text of the title to something shorter.*/
 
-const mainTitleEl = document.querySelector('#main-title')
-// console.log("iiiii")
-mainTitleEl.querySelector('main-title').innerHTML = "<h1>This is Dom Torretto's World!</h1>";
+const h1Text = document.getElementById('main-title')
+// // console.log("iiiii")
+h1Text = ("<h1>This is Dom Torretto's World!</h1>");
+h1Text.append(h1Text)
 
-body.backgroundColor = '#3CB371'
+//Part 2
+/*Select the body and change the background-color to a new color of your choice.*/
+const stored = document.querySelector('body')
+body.style.backgroundColor = '#3CB371'
+
+const faveThings = document.querySelector("favorite-things")
+
+faveThings
