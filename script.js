@@ -10,14 +10,19 @@ let quotes = [
 
 const h1TextEl = document.getElementById('main-title')
 // // console.log("iiiii")
-h1Text.textContent = ("This is Dom Torretto's World!");
-h1Text.append(h1Text)
+h1TextEl.textContent = ("This is Dom Torretto's World!");
+h1TextEl.append(h1TextEl)
 
 //Part 2
 /*Select the body and change the background-color to a new color of your choice.*/
-const storedBody = document.querySelector('#body')
-storedBody.style.backgroundColor = '#3CB371'
+const storedBodyEl = document.querySelector('body')
+storedBodyEl.style.backgroundColor = '#3CB371'
 
-const faveThings = document.querySelector("favorite-things")
+/* Part 3
+Select DOM's Favorite Things list and remove the last list item.*/ 
+const faveThingsEl = document.querySelector("#favorite-things")
 
-faveThings
+faveThingsEl.classList.remove(faveThingsEl.lastElementChild)
+
+// Part 5
+// Turns out DOM never raced in Chicago. Access the Past Races list and remove Chicago.
