@@ -8,15 +8,15 @@ let quotes = [
 ];
 /*Part 1: Write a JavaScript statement that selects the #main-title ID element.Change the text of the title to something shorter.*/
 
-const h1Text = document.getElementById('main-title')
+const h1TextEl = document.getElementById('main-title')
 // // console.log("iiiii")
-h1Text = ("<h1>This is Dom Torretto's World!</h1>");
+h1Text.textContent = ("This is Dom Torretto's World!");
 h1Text.append(h1Text)
 
 //Part 2
 /*Select the body and change the background-color to a new color of your choice.*/
-const stored = document.querySelector('body')
-body.style.backgroundColor = '#3CB371'
+const storedBody = document.querySelector('#body')
+storedBody.style.backgroundColor = '#3CB371'
 
 const faveThings = document.querySelector("favorite-things")
 
