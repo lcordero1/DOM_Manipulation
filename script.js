@@ -24,11 +24,11 @@ Select DOM's Favorite Things list and remove the last list item.*/
 // const sideBar = document.querySelector("side-bar")
 // const faveThings = document.getElementById('favorite-things')
 
-// sideBar.removeChild(faveThings)
+// sideBar.removeChild("faveThings")
 // const sideBar = document.querySelector("side-bar")
-// const faveThingsLi = document.getElementById("#favorite-things");
-// // //faveThingsLi.removeChild(faveThingsLi.lastElementChild)
-// sideBar.removeChild[5](faveThingsLi);
+const faveThingsLi = document.getElementById("#favorite-things");
+faveThingsLi.removeChild(faveThingsLi.lastElementChild)
+// faveThingsLi.removeChild[5](faveThingsLi);
 // //im not sure why this is not working
 
 
@@ -73,8 +73,25 @@ pastRaces.appendChild(newLi);
 
 
 
+
 // Part 9
 // Select all .blog-post class elements. Iterate through the list of .blog-post class elements and apply two event handlers to each node. The first event handler should be listening for mouseout events while the second handler should be listening for mouseenter events.
 
 // The mouseouthandler should toggle the class .purple
 // The mouseenterhandler should toggle the class .red
+function mouseOut()
+const blogPostPur = document.querySelectorAll("blog-post purple");
+ 
+blogPostPur.forEach((blogPostPur)) = {
+  blogPostPur.addEventListener("mouseout", () => {
+    blogPostPur.classList.toggle("blue")
+    console.log('mouseout', blog);
+  blogPostPur.addEventListener('mouseenter',()  => {
+    blogPostPur.addEventListener("mouseout", () => {
+      blogPostPur.classList.toggle("blue")
+    }
+
+    )
+  });
+  }
+  )
