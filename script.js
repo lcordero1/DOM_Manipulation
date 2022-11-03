@@ -20,7 +20,7 @@ const storedBodyEl = document.querySelector('body')
 storedBodyEl.style.backgroundColor = '#3CB371'
 
 /* Part 3
-Select DOM's Favorite Things list and remove the last list item.*/ 
+Select DOM's Favorite Things list and remove the last list item.*/
 // const sideBar = document.querySelector("side-bar")
 // const faveThings = document.getElementById('favorite-things')
 
@@ -37,7 +37,7 @@ faveThingsLi.removeChild(faveThingsLi.lastElementChild)
 
 let specialEl = document.getElementsByClassName("special-title");
 for (let i = 0; i < specialEl.length; i++) {
-    specialEl[i].style.fontSize = '2rem';
+  specialEl[i].style.fontSize = '2rem';
 }
 // console.log(specialEl)
 
@@ -65,33 +65,43 @@ pastRaces.appendChild(newLi);
 // Part 7
 // Create a new .blog-post corresponding to the new city added in Part 6. You will have to create a new <div> with class of .blog-post, a new <h2> with text, and a new <p> with some text. Think about what order you want to create the elements, and what order you want to append them in.
 
+function newBlogPost(city, quote) {
+
+}
 
 
 // Part 8
 // When you reload the page, the script.js file loads a random DOM quote. Let's play with the included function:
+
+const randomQuote = function () {
+  document.getElementByID("quote-of-the-day").innerText = `"${
+    quotes[Math.floor(Math.random() * quotes.length)]
+  }"`;
+};
+
 // Query select the #quote-title ID element and add a click event handler. That event handler should use the function randomQuotewhenever #quote-title is clicked.
+const quoteTitle = document.getElementById("quote-title")
 
-
-
+quoteTitle.addEventListener("click", randomQuote())
 
 // Part 9
 // Select all .blog-post class elements. Iterate through the list of .blog-post class elements and apply two event handlers to each node. The first event handler should be listening for mouseout events while the second handler should be listening for mouseenter events.
 
 // The mouseouthandler should toggle the class .purple
 // The mouseenterhandler should toggle the class .red
-function mouseOut()
-const blogPostPur = document.querySelectorAll("blog-post purple");
- 
-blogPostPur.forEach((blogPostPur)) = {
-  blogPostPur.addEventListener("mouseout", () => {
-    blogPostPur.classList.toggle("blue")
-    console.log('mouseout', blog);
-  blogPostPur.addEventListener('mouseenter',()  => {
-    blogPostPur.addEventListener("mouseout", () => {
-      blogPostPur.classList.toggle("blue")
-    }
+// function mouseOut()
+// const blogPostPur = document.querySelectorAll("blog-post purple");
 
-    )
-  });
-  }
-  )
+// blogPostPur.forEach((blogPostPur)) = {
+//   blogPostPur.addEventListener("mouseout", () => {
+//     blogPostPur.classList.toggle("blue")
+//     console.log('mouseout', blog);
+//     blogPostPur.addEventListener('mouseenter', () => {
+//       blogPostPur.addEventListener("mouseout", () => {
+//         blogPostPur.classList.toggle("blue")
+//       }
+//       )
+//     })
+//   }
+//   )
+// } 
